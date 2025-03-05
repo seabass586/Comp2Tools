@@ -1,3 +1,7 @@
+#Sebastian Hernandez
+#srh5868@rit.edu
+#Team Foxtrot 
+
 import os
 import subprocess
 
