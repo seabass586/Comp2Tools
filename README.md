@@ -1,6 +1,6 @@
 
 ## Overview
-This Red Team KotH Tool is designed for King of the Hill (KotH) competitions to help automate system enumeration, privilege escalation, and persistence on both Windows and Linux. It enables Red Team players to quickly gain control of a target machine, escalate privileges, and maintain access, while identifying potential weaknesses for defense.
+This tool is designed for King of the Hill (KotH) competitions to help automate system enumeration, privilege escalation, and persistence on both Windows and Linux. It enables Red Team players to quickly gain control of a target machine, escalate privileges, and maintain access, while identifying potential weaknesses for defense.
 
 ## Usage
 ### Running the Script
@@ -21,7 +21,7 @@ python3 sys_helper.py
     reg query HKCU\Software\Microsoft\Windows\CurrentVersion\Run
     ```
 
-- Clear logs after execution:
+- For better security clear logs after execution:
   ```bash
   echo > ~/.bash_history && history -c
   ```
