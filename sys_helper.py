@@ -3,7 +3,7 @@ import subprocess
 
 # Function to execute shell commands and return output
 def run_command(command):
-    """Executes a shell command and returns the output."""
+    # Executes a shell command and returns the output
     try:
         result = subprocess.run(command, shell=True, capture_output=True, text=True)
         return result.stdout.strip()
@@ -12,7 +12,7 @@ def run_command(command):
 
 # Function to detect the operating system
 def detect_os():
-    """Detects whether the system is Windows or Linux."""
+    # Detects whether the system is Windows or Linux
     if os.name == 'nt':
         return 'Windows'
     else:
@@ -20,7 +20,7 @@ def detect_os():
 
 # Function to gather system information based on the OS
 def enumerate_system():
-    """Gathers basic system information such as hostname, users, privilege info, and scheduled jobs."""
+    # Gathers basic system information such as hostname, users, privilege info, and scheduled jobs 
     os_type = detect_os()
     print(f"Detected OS: {os_type}")
     
@@ -53,7 +53,7 @@ def enumerate_system():
 
 # Function to check for privilege escalation opportunities
 def privilege_escalation():
-    """Checks for common privilege escalation techniques based on OS."""
+    # Checks for common privilege escalation techniques based on OS
     os_type = detect_os()
     print("Checking for privilege escalation opportunities...")
     
@@ -88,7 +88,7 @@ def privilege_escalation():
 
 # Function to maintain access on the system
 def maintain_access():
-    """Sets up a backdoor for persistence based on the OS."""
+    # Sets up a backdoor for persistence based on the OS
     os_type = detect_os()
     print("Setting up a simple backdoor...")
     
